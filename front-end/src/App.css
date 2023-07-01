@@ -1,0 +1,125 @@
+.Nav-ul li{
+  display: inline-block;
+  padding:10px;
+}
+.Nav-ul{
+    padding: 0px;
+    margin: 0px;
+    background-color: limegreen;
+    text-align:right;
+}
+.welcome{
+ float:left;
+ padding: 5px;
+ text-decoration: none;
+ color: whitesmoke;
+}
+.Nav-ul li a{
+  padding: 5px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer{
+  position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color:limegreen;
+}
+.signup{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.inputbox{
+  padding: 7px;
+    margin: 10px;
+    width: 300px;
+    border: 2px solid limegreen;
+    border-radius: 9px;
+    height: 26px;
+}
+.inputboxButton{
+  padding: 7px;
+    margin: 10px;
+    width: 250px;
+    border: 2px solid limegreen;
+    border-radius: 25px;
+    height: 45px;
+    background-color: white;
+}
+.inputboxButton:hover{
+   color:white;
+   background-Color:limegreen;
+   cursor:pointer;
+}
+.addproduct{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.adderror{
+  font-size: 0.6rem;
+  color: red;
+}
+.product-list{
+  text-align: center;
+}
+.product-list ul li {
+  display:inline-block;
+  border: 1px solid rgb(86, 254, 86);
+  padding: 5px;
+  width: 15%;
+  height: 25px;
+}
+.product-list ul{
+  margin:0px;
+  padding:0px;
+}
+.searchbar{
+  margin: 25px;
+    width: 33%;
+    height: 25px;
+    border: 1px solid lime;
+    border-radius: 5px;
+}
+.profiledetails{
+  font-size:1rem;
+}
+/* .del_btn{
+
+}
+.update_btn {
+
+} */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
