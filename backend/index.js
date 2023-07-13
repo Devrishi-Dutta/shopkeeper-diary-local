@@ -2,6 +2,11 @@ const express = require('express');
 
 const cors = require('cors');
 
+const path=require('path');
+
+const dotenv=require('dotenv');
+dotenv.config();
+
 require('./db/config');
 const User = require("./db/User");
 const Product = require("./db/Product");
@@ -12,8 +17,10 @@ const jwt = require('jsonwebtoken');
 const jwtKey = 'shopkeeper';
 
 const app = express();
+
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, './front-end/build')));
 
 app.post("/register", async (req, res) => {
     let user = new User(req.body);
@@ -201,6 +208,7 @@ function verifyToken(req,res,next){
    
 }
 
-app.listen(5000, () => {
-    console.log("app is listening on port 5000");
+const PORT=process.env.PORT ;
+app.listen(PORT, () => {
+    console.log("app is listening on PORT");
 });
