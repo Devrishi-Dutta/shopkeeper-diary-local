@@ -19,6 +19,9 @@
       <li><h4>Product Database :</h4>Shopkeepers can create a centralized database to store essential details of all the products available in their store.
         <img width="960" alt="Screenshot 2023-08-07 075222" src="https://github.com/Devrishi-Dutta/shopkeeper-diary-local/assets/97834009/ffcca94a-0c97-456e-b0fd-a4a3a8d041e0">
       </li>
+      <li><h4>Seller Database :</h4>Shopkeepers can maintain a separate section for managing seller information, facilitating efficient collaboration with multiple sellers.
+       <img width="960" alt="Screenshot 2023-08-07 075248" src="https://github.com/Devrishi-Dutta/shopkeeper-diary-local/assets/97834009/dd53a018-0cd3-40a3-a7dd-d8a95c409b8a">
+      </li>
       
     </ul>
   </h3>
