@@ -1,23 +1,19 @@
-const express = require('express');
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import connectDB from './db/config.js';
 
-const cors = require('cors');
-
-const path=require('path');
-
-const dotenv=require('dotenv');
 dotenv.config();
 
-require('./db/config');
-const User = require("./db/User");
-const Product = require("./db/Product");
+connectDB();
+import User from "./db/User.js";
+import Product from "./db/Product.js";
+import Seller from "./db/Seller.js";
+import jwt from 'jsonwebtoken';
 
-const Seller = require("./db/Seller");
-
-const jwt = require('jsonwebtoken');
 const jwtKey = 'shopkeeper';
 
 const app = express();
-
 app.use(express.json());
 app.use(cors());
 
@@ -207,7 +203,7 @@ function verifyToken(req,res,next){
    
 }
 
-const PORT=process.env.PORT ;
+const PORT=process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log("app is listening on PORT");
 });
