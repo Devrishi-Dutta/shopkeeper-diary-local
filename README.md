@@ -2,6 +2,7 @@
 <h1 align="center">Shopkeeper-Diary</h1>
   <h3 align="center">
     <a href="https://delightful-dango-6445c6.netlify.app/">Visit Website</a>
+    <h4>(Close the tab and revisit the link if signUp/login is not working for the first time)</h4>
   </h3>
 </div>
 <div align="center">
